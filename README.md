@@ -1,3 +1,4 @@
+# weather-app
 Simple application to fetch weather by location keywords.
 
 Users can search by location names to get the current weather update.
