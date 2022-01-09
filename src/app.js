@@ -27,20 +27,6 @@ app.get('', (req, res) => {
     })
 })
 
-app.get('/about', (req, res) => {
-    res.render('about', {
-        title: 'About Me',
-        name: 'pingusta'
-    })
-})
-
-app.get('/help', (req, res) => {
-    res.render('help', {
-        helpText: 'Help Page',
-        title: 'Help',
-        name: 'pingusta'
-    })
-})
 
 app.get('/weather', (req, res) => {
 
@@ -68,18 +54,10 @@ app.get('/weather', (req, res) => {
 
 })
 
-app.get('/help/*', (req, res) => {
-    res.render('404', {
-        title: '404',
-        name: 'pingusta',
-        errorMessage: 'Help article not found.'
-    })
-})
-
 app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'pingusta',
+        name: 'Ali Mehraj',
         errorMessage: 'Page not found.'
     })
 })
