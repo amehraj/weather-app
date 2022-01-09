@@ -1,7 +1,3 @@
-console.log('Client side javascript file is loaded!')
-
-
-
 const weatherForm = document.querySelector('form')
 const searchTerm = document.querySelector('input')
 const dataMessage = document.querySelector('#dataMessage')
@@ -23,8 +19,7 @@ weatherForm.addEventListener('submit', (event) => {
                 errorMessage.textContent = data.error
             }
             else{
-                console.log(data)
-                dataMessage.textContent = 'Search Term: ' + data.address + '\n' +' Location: ' + data.location + ' Forecast: ' + data.forecast
+                dataMessage.textContent = "Search Term: " + data.address + ". " +" Location: " + data.location + " Forecast: " + data.forecast
             }
             
         })

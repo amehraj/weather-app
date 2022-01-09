@@ -9,16 +9,16 @@
     
 </head>
 
-<body>
-    <div class="main-content">
+<body style="background-image: url('/img/background.jpg');">
+    <div class="main-content" >
         {{>header}}
 
-        <p>Use this site to get your weather!</p>
+        <p style="color: white;">Search a location by name (Country/City/Location) to get the weather!</p>
         <form>
-            <input type="text" placeholder="Location" required>
-            <button>Search</button>
-            <p id="dataMessage"></p>
-            <p id="errorMessage"></p>
+            <input type="text" placeholder="Location" required class="location-input">
+            <button class="location-search-button">Search</button>
+            <p id="dataMessage" style="color: white;"></p>
+            <p id="errorMessage" style="color: white;"></p>
         </form>
     </div>
 
